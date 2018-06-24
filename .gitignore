@@ -1,0 +1,23 @@
+# this is a comment
+tempfile.txt
+.DS_Store
+*.zip
+*.gz
+
+# directory log/ and anything inside that directory with *.log
+log/*.log
+
+# log file with append the number 
+log/*.log.[0-9]
+
+# ignore every photoshop file in photoshop directory
+assets/photoshop/
+
+# ignore videos directory
+assets/videos
+
+# let say we wont want to ignore some videos .mp4
+!assets/videos/tour_*.mp4  
+
+# question: would log/archive/access.log be ignore
+# answer  : no, the rules above apply only for file not for the nest folder
